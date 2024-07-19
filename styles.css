@@ -1,0 +1,154 @@
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background: url("https://png.pngtree.com/background/20230401/original/pngtree-tech-future-cyberpunk-background-picture-image_2251580.jpg") no-repeat center center fixed; 
+  background-size: cover;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+li:last-child {
+  border-bottom: none;
+}
+
+a {
+  text-decoration: none;
+  color: #007BFF;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+.container {
+  text-align: center;
+  background-color: #fff;
+  padding: 50px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.message {
+  position: relative;
+  display: inline-block;
+}
+
+.checkmark {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: inline-block;
+  background-color: #4caf50;
+  position: relative;
+  animation: pop 0.3s ease-in-out both;
+}
+
+.checkmark-circle {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  animation: expand 0.4s ease-in-out both;
+}
+
+.checkmark-stem, .checkmark-kick {
+  position: absolute;
+  background-color: #fff;
+}
+
+.checkmark-stem {
+  width: 4px;
+  height: 20px;
+  top: 50%;
+  left: 25%;
+  transform: rotate(45deg) translateY(-50%);
+  transform-origin: bottom left;
+  animation: draw-stem 0.3s 0.4s ease-in-out both;
+}
+
+.checkmark-kick {
+  width: 4px;
+  height: 10px;
+  top: 60%;
+  left: 42%;
+  transform: rotate(-45deg) translateY(-50%);
+  transform-origin: bottom left;
+  animation: draw-kick 0.3s 0.7s ease-in-out both;
+}
+
+h1 {
+  color: #333;
+  margin-top: 20px;
+  font-size: 24px;
+}
+
+@keyframes pop {
+  0% {
+      transform: scale(0);
+  }
+  100% {
+      transform: scale(1);
+  }
+}
+
+@keyframes expand {
+  0% {
+      transform: scale(0);
+  }
+  100% {
+      transform: scale(1);
+  }
+}
+
+@keyframes draw-stem {
+  0% {
+      height: 0;
+  }
+  100% {
+      height: 20px;
+  }
+}
+
+@keyframes draw-kick {
+  0% {
+      height: 0;
+  }
+  100% {
+      height: 10px;
+  }
+}
